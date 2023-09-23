@@ -1,0 +1,76 @@
+h3{
+    margin: 20px;
+    font-size: medium;
+}
+
+.left{
+    text-align: left;
+    display: flex;  
+}
+
+.right{
+    text-align: right;  
+}
+h2{
+    color: grey;
+}
+
+.flex{
+    display: flex;
+}
+
+.right-s{
+   margin-right: 20px;
+   margin-left: 770px;
+}
+
+.card{
+    width: 7rem;
+    border: none;
+    margin-left: 20px;
+    display: flex;
+}
+
+.angle a{
+    color: grey;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.angle a:hover{
+    text-decoration: underline;
+    
+}
+form input{
+    width: 25%;
+    border: 0.2px solid;
+    border-radius:6px;
+}
+form input:active{
+    border:black;
+    
+}
+
+.style{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    column-gap: 1.6rem;
+}
+
+
+.title::after,.title::before{
+    height: 2px;
+    content: "";
+    background-color: #000;
+    display: block;
+    width: 100px;
+}
