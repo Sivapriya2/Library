@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Online Library</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./MyBooks.html">My Books</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Browse
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./subject.html">Subjects</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./trending.html">Trending</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./lists.html">Lists</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./student.html">K-12 Student Library</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./advanced.html">Advanced Search</a></li>
+                  
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <form id="signupForm">
+     <div style="display: flex;margin: 30px;">
+      <h2>Signup With</h2>
+      <button type="button" class="rounded-circle text-primary btn-floating mx-1" style="width: 40px;height: 40px;">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 488 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+      </button>
+    </div>
+    <hr/>
+    <div style="margin: 30px;">
+    <p>Complete the form below to create a new Internet Archive account. <span style="color: red;"> field is required</span></p>
+    <div style="font-weight: 500;">
+    <label for="">Email Address</label><br/>
+    <input type="text" id="signupEmail"><br/><br/>
+    <label for="">Choose Screen Name</label><br/>
+    <input type="text" id="signupScreen"><br/><br/>
+    <label for="">Enter Password</label><br/>
+    <input type="password" id="signupPassword"><br/><br/>
+    <label for="">Confirm Password</label><br/>
+    <input type="password" id="signupConfirm"><br/><br/>
+    </div>
+    <input type="checkbox" id="checkbox">I want to receive news, announcements, and resources from the <a href="">Internet Archive</a>, the non-profit that runs Open Library.<hr>
+   <p>By signing up, you agree to the Internet Archive's <a href="">Terms of Service</a>.</p> 
+  <div style="display: flex;"> <button type="button" class="btn btn-outline-info" id="signupButton" onclick="signup()">Signup</button><a href="" style="margin-top: 12px;margin-left: 10px;">cancel</a>
+    </div></div></form>
+    <script src="./index.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
