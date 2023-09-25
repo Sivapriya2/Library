@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Online Library</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./MyBooks.html">My Books</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Browse
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./subject.html">Subjects</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./trending.html">Trending</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./lists.html">Lists</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./student.html">K-12 Student Library</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./advanced.html">Advanced Search</a></li>
+                  
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav><div style="margin: 20px;">
+      <h2>Trending Books: Now</h2>
+      <h6 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">See what readers from the community are adding to their bookshelves</h6>
+      <nav class="navbar navbar-expand-sm gap-2">
+        <a href="#">Now</a><a href="#">Today</a><a href="#">This Week</a><a href="#">This Month</a><a href="#">This Year</a><a href="#">All Time</a>
+      </nav>
+    </div>
+    <div class="text-bg-light p-3" style="display: flex;">
+      <div class="card-body left list-unstyled">
+        <img src="https://th.bing.com/th/id/OIP.s_yAcZVpEfUsMgPMGoEfnAAAAA?w=195&h=292&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="" width="120px">
+       <div>
+          <a href="" style="text-decoration: none;color: black;margin: 10px;"><b>Skyclan's Destiny</b></a>
+          <h3>by Erin Hunter</h3>
+          <small style="margin-left: 10px;">First published in 2010</small>
+          <h6 style="font-size:small;margin: 10px;"><span style="color: rgb(64, 2, 250);">6 editions</span>--2 previewable</h6>
+       </div>
+      </div>
+      <div class="right">
+         <button ype="button" class="btn btn-primary" style="margin-top:70px;width: 150px;">Read</button>
+      </div>
+    </div> 
+  <br/>
+    <div class="text-bg-light p-3" style="display: flex;">
+        <div class="card-body left list-unstyled">
+          <img src="https://th.bing.com/th/id/OIP.b-I_Wmtnm5khllUz5c5RVgHaLG?w=195&h=292&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="" width="120px">
+         <div>
+            <a href="" style="text-decoration: none;color: black;margin: 10px;"><b>Verity</b></a>
+            <h3>by Colleen Hoover</h3>
+            <small style="margin-left: 10px;">First published in 2018</small>
+            <h6 style="font-size:small;margin: 10px;"><span style="color: rgb(64, 2, 250);">16 editions</span></h6>
+         </div>
+        </div>
+        <div class="right">
+           <button ype="button" class="btn btn-primary" style="margin-top:70px;width: 150px;">Read</button>
+        </div>
+      </div> 
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
